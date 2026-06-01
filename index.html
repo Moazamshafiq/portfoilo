@@ -1,0 +1,867 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Muhammad Zia | Odoo Developer Portfolio</title>
+
+    <meta
+      name="description"
+      content="Muhammad Usama Zia, an Odoo Developer specializing in ERP customization, automation, reports, dashboards, integrations, and business workflow solutions."
+    />
+
+    <link rel="canonical" href="https://muhammadusamazia.dev/" />
+
+    <!-- WhatsApp / Facebook / LinkedIn Preview -->
+    <meta
+      property="og:title"
+      content="Muhammad Zia | Odoo Developer Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Odoo Developer portfolio showcasing ERP customization, automation, reports, dashboards, integrations, and business workflow solutions."
+    />
+    <meta
+      property="og:image"
+      content="https://muhammadusamazia.dev/assets/preview/portfolio-preview.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Muhammad Zia Odoo Developer Portfolio Preview"
+    />
+    <meta property="og:url" content="https://muhammadusamazia.dev/" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter / X Preview -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Muhammad Zia | Odoo Developer Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Odoo Developer portfolio showcasing ERP customization, automation, reports, dashboards, integrations, and business workflow solutions."
+    />
+    <meta
+      name="twitter:image"
+      content="https://muhammadusamazia.dev/assets/preview/portfolio-preview.png"
+    />
+
+    <!-- Favicons -->
+    <link rel="icon" href="assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="assets/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="assets/favicon/android-chrome-512x512.png"
+    />
+
+    <!-- CSS files -->
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/timeline.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/project_details.css" />
+    <link rel="stylesheet" href="css/tech.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="logo" href="#home" aria-label="Home">
+          <svg
+            class="logo__img"
+            viewBox="0 0 750 330"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <!-- right circle -->
+            <g transform="translate(640,9)">
+              <path
+                fill="currentColor"
+                d="M0 0 C0.66870117 0.24588867 1.33740234 0.49177734 2.02636719 0.74511719 C42.51092688 15.81573563 76.76569635 46.53130106 94.85913086 85.98217773 C112.65514242 126.29021708 115.74074127 172.89396645 99.6875 214.375 C89.18138523 240.40524758 73.24256588 265.41285488 51 283 C50.46987305 283.42603516 49.93974609 283.85207031 49.39355469 284.29101562 C13.53285641 312.92532792 -30.02473116 324.93245717 -75.62890625 320.53125 C-93.57028276 318.36232151 -110.75865502 312.79229557 -127 305 C-128.06605469 304.50628906 -129.13210938 304.01257813 -130.23046875 303.50390625 C-145.17174996 296.37152233 -159.65387379 286.11198973 -171 274 C-171.78890625 273.21238281 -172.5778125 272.42476563 -173.390625 271.61328125 C-202.64816171 242.31194583 -220.24567459 201.98889862 -220.32226562 160.44726562 C-220.32009033 159.66262939 -220.31791504 158.87799316 -220.31567383 158.06958008 C-220.31251694 155.70021313 -220.33606894 153.33210436 -220.36132812 150.96289062 C-220.40537555 140.33961528 -219.22386037 130.38100504 -217 120 C-216.81187744 119.11594482 -216.62375488 118.23188965 -216.42993164 117.32104492 C-215.96145203 115.27907742 -215.4431864 113.26629389 -214.875 111.25 C-214.67036133 110.52377441 -214.46572266 109.79754883 -214.25488281 109.04931641 C-207.18132386 85.21011095 -195.00883065 64.04142664 -178.44140625 45.62890625 C-177.25215094 44.28495106 -176.14483048 42.86896935 -175.0625 41.4375 C-172.05619386 37.88459274 -168.54490397 35.00139229 -165 32 C-164.48800049 31.54858643 -163.97600098 31.09717285 -163.44848633 30.63208008 C-159.25997671 26.96380877 -154.91691291 23.68939845 -150.3125 20.5625 C-149.60971924 20.08514404 -148.90693848 19.60778809 -148.18286133 19.1159668 C-105.13965384 -9.87851815 -49.12937608 -18.35941194 0 0 Z"
+              />
+            </g>
+
+            <!-- left half-circle (THIS will wink) -->
+            <g transform="translate(0,165)">
+              <path
+                class="logo__lid"
+                fill="currentColor"
+                d="M0 0 C108.9 0 217.8 0 330 0 C330 20.8984679 330 20.8984679 328.8125 27 C328.6779541 27.73307373 328.5434082 28.46614746 328.40478516 29.22143555 C321.71096415 64.06868019 305.37975506 94.27100789 280 119 C279.52304687 119.53367187 279.04609375 120.06734375 278.5546875 120.6171875 C254.0142371 147.13848143 212.62449329 163.73227979 176.80200195 165.12426758 C127.16381873 166.22992465 84.01326874 151.21788331 47.859375 116.79296875 C15.62627982 85.30845638 2.20410882 44.08217643 0 0 Z"
+              />
+            </g>
+          </svg>
+        </a>
+
+        <nav class="menu" id="menu">
+          <a href="#home" class="menu__link is-active">Home</a>
+          <a href="#timeline" class="menu__link">Timeline</a>
+          <a href="#about" class="menu__link">About</a>
+          <a href="#services" class="menu__link">Services</a>
+          <a href="#projects" class="menu__link">Projects</a>
+          <a href="#tech" class="menu__link">Stack</a>
+          <a href="#contact" class="menu__link">Contact</a>
+          <a
+            href="https://docs.google.com/document/d/1LwlF1dSaSA6yt0y9Ww0DtZA-x5YrCMs4gtLctGuXZqw/export?format=pdf"
+            class="menu__icon"
+            target="_blank"
+            rel="noopener"
+          >
+            <i class="fa-solid fa-download"></i>
+          </a>
+          <button
+            class="menu__icon theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle theme"
+          >
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+        </nav>
+
+        <button
+          class="burger"
+          id="burger"
+          type="button"
+          aria-label="Open Menu"
+          aria-expanded="false"
+        >
+          <i class="fa-solid fa-bars" aria-hidden="true"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <main id="home" class="hero">
+      <div class="container hero__inner">
+        <h1 class="hero__title">
+          Well, look who found the source code; my repo.
+        </h1>
+
+        <p class="hero__text">
+          Hey there, I’m <strong>Muhammad Zia</strong> — a learner, a developer,
+          and an Odooer at Visiomate.
+          <br />
+          Yeah, welcome to my space.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--dark" href="#projects">View Projects</a>
+          <a class="btn btn--light btn--contact" href="#contact">Contact Me</a>
+          <a
+            class="btn btn--light btn--resume"
+            href="https://docs.google.com/document/d/1LwlF1dSaSA6yt0y9Ww0DtZA-x5YrCMs4gtLctGuXZqw/export?format=pdf"
+            target="_blank"
+            rel="noopener"
+            >Resume</a
+          >
+        </div>
+      </div>
+    </main>
+
+    <!-- WORK EXPERIENCE / TIMELINE -->
+    <section id="timeline" class="section">
+      <div class="container">
+        <h2 class="section__title">Work Experience / Timeline</h2>
+        <div class="section__line"></div>
+
+        <div class="timeline">
+          <div class="timeline__track">
+            <!-- line1 -->
+            <div class="timeline__seg timeline__seg--outer" data-seg="1">
+              <div class="timeline__card">
+                <h3>Startup Attempt</h3>
+                <p>
+                  I tried building my own business,
+                  <a
+                    href="https://instagram.com/carwear.pk"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >carwear.pk</a
+                  >
+                  — it didn’t take off.
+                </p>
+                <small>Early Grind Era</small>
+              </div>
+            </div>
+
+            <!-- dot1 -->
+            <div class="timeline__node">
+              <div class="timeline__year">2022</div>
+              <span class="dot"></span>
+            </div>
+
+            <!-- line2 -->
+            <div class="timeline__seg timeline__seg--inner" data-seg="2">
+              <div class="timeline__card">
+                <h3>WordPress & Marketing</h3>
+                <p>
+                  Worked on local projects while gaining experience in client
+                  work and marketing.
+                </p>
+                <small>Skill Building Phase</small>
+              </div>
+            </div>
+
+            <!-- dot2 -->
+            <div class="timeline__node">
+              <div class="timeline__year">2023</div>
+              <span class="dot"></span>
+            </div>
+
+            <!-- line3 -->
+            <div class="timeline__seg timeline__seg--inner" data-seg="3">
+              <div class="timeline__card">
+                <h3>Frontend Journey</h3>
+                <p>
+                  Focused on HTML, CSS, JavaScript, React, and Python while
+                  shifting toward frontend development.
+                </p>
+                <small>Turning Point Phase</small>
+              </div>
+            </div>
+
+            <!-- dot3 -->
+            <div class="timeline__node">
+              <div class="timeline__year">2024</div>
+              <span class="dot"></span>
+            </div>
+
+            <!-- line4 -->
+            <div class="timeline__seg timeline__seg--inner" data-seg="4">
+              <div class="timeline__card">
+                <h3>Entering Odoo ERP</h3>
+                <p>
+                  Started as a trainee, grew through internship, and became a
+                  full-time Odoo developer.
+                </p>
+                <small>Visiomate Era Begins</small>
+              </div>
+            </div>
+
+            <!-- dot4 -->
+            <div class="timeline__node">
+              <div class="timeline__year">2025</div>
+              <span class="dot"></span>
+            </div>
+
+            <!-- line5 -->
+            <div class="timeline__seg timeline__seg--inner" data-seg="5">
+              <div class="timeline__card">
+                <h3>ERP Development Phase</h3>
+                <p>
+                  Working on client projects, learning business logic, building
+                  reports and dashboards, and working in Ubuntu environments.
+                </p>
+                <small>Jr Odoo Developer</small>
+              </div>
+            </div>
+
+            <!-- dot5 -->
+            <div class="timeline__node">
+              <div class="timeline__year">2026</div>
+              <span class="dot"></span>
+            </div>
+
+            <!-- line6 -->
+            <div class="timeline__seg timeline__seg--outer" data-seg="6">
+              <div class="timeline__card">
+                <h3>What’s Next?</h3>
+                <p>
+                  Year just started, man 😄 Come back after 6 months and check
+                  again.
+                </p>
+                <small>Next Update Pending</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container about">
+        <div class="about__left">
+          <div class="about__placeholder">Zia</div>
+        </div>
+
+        <div class="about__right">
+          <h2 class="section__title">About Me</h2>
+          <p class="about__text">
+            I’m an Odoo Developer focused on ERP customization and business
+            process optimization. I build scalable systems with clean code,
+            automation, and strong business logic.
+          </p>
+          <p class="about__text">
+            I work with Odoo v16–v19, APIs, reporting (PDF/Excel), dashboards,
+            and integrations to help businesses run faster and smarter.
+          </p>
+          <p class="about__text">
+            I’ve contributed to real client projects across Sales, Purchase, HR,
+            Accounting, and other core business modules, translating workflows
+            into reliable technical solutions and continuously improving systems
+            as businesses grow.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section section--soft">
+      <div class="container">
+        <h2 class="section__title">What I Do (Services)</h2>
+        <div class="section__line"></div>
+
+        <div class="grid">
+          <article class="card">
+            <div class="card__top">
+              <div class="icon"><i class="fa-solid fa-terminal"></i></div>
+              <!-- <span class="card__arrow">↗</span> -->
+            </div>
+            <h3 class="card__title">Odoo ERP Customization</h3>
+            <p class="card__text">
+              Full-scale Odoo customization to fit real business workflows —
+              custom modules, views, wizards, and clean logic that scales.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">XML</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div class="icon"><i class="fa-solid fa-microchip"></i></div>
+              <!-- <span class="card__arrow">↗</span> -->
+            </div>
+            <h3 class="card__title">System Integration</h3>
+            <p class="card__text">
+              Integrate Odoo with third-party apps and legacy systems — secure
+              APIs, syncing, and reliable data flow between systems.
+            </p>
+            <div class="tags">
+              <span class="tag">REST API</span>
+              <span class="tag">JSON-RPC</span>
+              <span class="tag">Postman</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div class="icon"><i class="fa-solid fa-code"></i></div>
+              <!-- <span class="card__arrow">↗</span> -->
+            </div>
+            <h3 class="card__title">Module Development</h3>
+            <p class="card__text">
+              Build custom Odoo modules for Accounting, Inventory, Sales, CRM,
+              and more — clean architecture, reusable code, and smooth UX.
+            </p>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">XML</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div class="icon"><i class="fa-solid fa-rotate-right"></i></div>
+              <!-- <span class="card__arrow">↗</span> -->
+            </div>
+            <h3 class="card__title">Workflow Automation</h3>
+            <p class="card__text">
+              Automate approvals, scheduled actions, and smart flows to cut
+              manual work and keep processes consistent across teams.
+            </p>
+            <div class="tags">
+              <span class="tag">Workflows</span>
+              <span class="tag">Business Logic</span>
+              <span class="tag">Automation</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+              <!-- <span class="card__arrow">↗</span> -->
+            </div>
+            <h3 class="card__title">Reports & Dashboards</h3>
+            <p class="card__text">
+              QWeb PDF reports, Excel exports, and dashboards for KPIs — clean
+              layouts, useful insights, and business-ready formats.
+            </p>
+            <div class="tags">
+              <span class="tag">QWeb</span>
+              <span class="tag">XLSX</span>
+              <span class="tag">Dashboards</span>
+              <span class="tag">KPIs</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card__top">
+              <div class="icon"><i class="fa-solid fa-grip"></i></div>
+              <!-- <span class="card__arrow">↗</span> -->
+            </div>
+            <h3 class="card__title">Odoo UI & Web</h3>
+            <p class="card__text">
+              Polished views, portal tweaks, website changes, and OWL/JS
+              enhancements to improve UX without breaking the core flow.
+            </p>
+            <div class="tags">
+              <span class="tag">OWL</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">XML</span>
+              <span class="tag">UX</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section__title">Projects I worked on</h2>
+        <div class="section__line"></div>
+
+        <div class="grid">
+          <!-- Carib Island Trading -->
+          <article class="card project-card" data-project="cit">
+            <h3 class="card__title">Carib Island Trading</h3>
+            <p class="card__text">
+              Odoo ERP customization for a dropshipping business, focusing on
+              automation between Sales and Purchase workflows. Implemented order
+              synchronization, reporting improvements, and system integrations
+              including WhatsApp and mail server configuration.
+            </p>
+            <div class="tags">
+              <span class="tag">United States</span>
+              <span class="tag">Visiomate</span>
+              <span class="tag">Dropshipping</span>
+              <span class="tag">Report</span>
+              <span class="tag">Synchronization</span>
+              <span class="tag">Sales & Purchase</span>
+              <span class="tag">Integrations</span>
+            </div>
+            <a
+              class="card__corner-icon"
+              href="https://caribislandtrading.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Carib Island Trading website"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- Centric -->
+          <article class="card project-card" data-project="centric">
+            <h3 class="card__title">Centric Events & Rentals</h3>
+            <p class="card__text">
+              Customized CRM and Sales workflows for Centric, including Fluent
+              Forms lead creation, Dialpad CRM/contact integration, website
+              visit tracking, custom contract PDFs, and a financial dashboard
+              built with Chart.js.
+            </p>
+            <div class="tags">
+              <span class="tag">United States</span>
+              <span class="tag">Visiomate</span>
+              <span class="tag">Fluent Forms Pro</span>
+              <span class="tag">Dialpad</span>
+              <span class="tag">Chart.js</span>
+              <span class="tag">Custom Reports</span>
+              <span class="tag">Website Tracking</span>
+            </div>
+            <a
+              class="card__corner-icon"
+              href="https://centric.events/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Centric Events & Rentals website"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- EcoZohm -->
+          <article class="card project-card" data-project="ecozohm">
+            <h3 class="card__title">EcoZohm</h3>
+            <p class="card__text">
+              Customer portal, allowing users to create Sales Orders directly,
+              with automated Purchase Order generation and shipping workflow
+              integration. Implemented project task automation to streamline
+              operations from order placement to execution.
+            </p>
+            <div class="tags">
+              <span class="tag">United States</span>
+              <span class="tag">Visiomate</span>
+              <span class="tag">Customer Portal</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Sales & Purchase</span>
+              <span class="tag">Shipping Integration</span>
+              <span class="tag">Report</span>
+            </div>
+            <a
+              class="card__corner-icon"
+              href="https://ecozohm.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open EcoZohm website"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- Engineering Marketing Est -->
+          <article class="card project-card" data-project="eme">
+            <h3 class="card__title">Engineering Marketing Est (EME)</h3>
+            <p class="card__text">
+              Customized CRM, Sales, reporting, approvals, and access control
+              for EME. Built a bidder system for vendor selection, custom
+              security groups with rules, and PDF reports across Sales,
+              Purchase, Delivery, Invoice, Receipt, Return, Vendor Bills, and
+              Internal Transfers.
+            </p>
+            <div class="tags">
+              <span class="tag">United Arab Emirates</span>
+              <span class="tag">Visiomate</span>
+              <span class="tag">Bidding System</span>
+              <span class="tag">Custom Reports</span>
+              <span class="tag">Access Control & Groups</span>
+              <span class="tag">Record Rules</span>
+            </div>
+            <a
+              class="card__corner-icon"
+              href="https://eme-me.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Engineering Marketing Est website"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- Live In Flow -->
+          <article class="card project-card" data-project="lif">
+            <h3 class="card__title">Live In Flow</h3>
+            <p class="card__text">
+              Worked on Odoo email marketing, automation, website customization,
+              and data cleaning. Set up Amazon SES, email campaigns, conditional
+              email templates, unsubscribe lists, duplicate cleanup, and
+              migrated the client from Odoo Online to Odoo.sh, including
+              database upgrade and domain setup.
+            </p>
+            <div class="tags">
+              <span class="tag">Australia</span>
+              <span class="tag">Visiomate</span>
+              <span class="tag">Amazon SES</span>
+              <span class="tag">Email Marketing</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Odoo.sh</span>
+              <span class="tag">Migration</span>
+              <span class="tag">Data Cleaning</span>
+            </div>
+            <a
+              class="card__corner-icon"
+              href="https://www.liveinflow.co/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Live In Flow website"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- Lotus Trading -->
+          <article class="card project-card" data-project="lotus">
+            <h3 class="card__title">Lotus Trading (Retail & Distribution)</h3>
+            <p class="card__text">
+              Led end-to-end customization for a retail and distribution
+              business, covering Sales, Purchase, Inventory, and Accounting.
+              Delivered 10+ custom PDF and Excel reports, implemented material
+              tracking, and optimized workflows for daily operations and
+              financial accuracy.
+            </p>
+            <div class="tags">
+              <span class="tag">Trinidad & Tobago</span>
+              <span class="tag">Visiomate</span>
+              <span class="tag">Inventory Management</span>
+              <span class="tag">Accounting</span>
+              <span class="tag">Custom Reports</span>
+            </div>
+            <a
+              class="card__corner-icon"
+              href="https://lotustradingltd.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Lotus Trading website"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- Quran Academy -->
+          <article class="card project-card" data-project="quranacademy">
+            <h3 class="card__title">Quran Academy</h3>
+            <p class="card__text">
+              ERP customization for an educational organization, covering
+              employee management, payroll workflows, reporting, and system
+              configuration. Implemented tailored reports, contact management
+              improvements, and process customizations to support day-to-day
+              operations.
+            </p>
+            <div class="tags">
+              <span class="tag">Pakistan</span>
+              <span class="tag">Visiomate</span>
+              <span class="tag">Education</span>
+              <span class="tag">Report</span>
+              <span class="tag">Contact</span>
+              <span class="tag">Customization</span>
+              <span class="tag">Payroll</span>
+            </div>
+            <a
+              class="card__corner-icon"
+              href="https://quranacademy.edu.pk/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Quran Academy website"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- TTi Testing Laboratories -->
+          <article class="card project-card" data-project="tti">
+            <h3 class="card__title">TTi Testing Laboratories</h3>
+            <p class="card__text">
+              Developed custom dashboards, attendance rules, and biometric
+              device integrations with Odoo HR. Implemented payroll-related
+              customizations, advanced reporting, and internal portals to
+              improve workforce tracking and operational visibility.
+            </p>
+            <div class="tags">
+              <span class="tag">Pakistan</span>
+              <span class="tag">Visiomate</span>
+              <span class="tag">Dashboard</span>
+              <span class="tag">Customization</span>
+              <span class="tag">Report</span>
+              <span class="tag">Portal</span>
+              <span class="tag">Attendance</span>
+              <span class="tag">HR</span>
+              <span class="tag">Payroll</span>
+            </div>
+            <a
+              class="card__corner-icon"
+              href="https://ttilabs.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open TTi Testing Laboratories website"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+
+          <!-- Visiomate ERP -->
+          <article class="card project-card" data-project="visiomate">
+            <h3 class="card__title">Visiomate ERP</h3>
+            <p class="card__text">
+              Internal ERP development and customization focused on project
+              management, task workflows, reporting, and business process
+              automation. Worked on project tasks, approvals, performance
+              tracking, custom reports, and system improvements used daily by
+              the internal team.
+            </p>
+            <div class="tags">
+              <span class="tag">Pakistan</span>
+              <span class="tag">Visiomate</span>
+              <span class="tag">Project</span>
+              <span class="tag">Report</span>
+              <span class="tag">Task Management</span>
+              <span class="tag">Automation</span>
+              <span class="tag">Payroll</span>
+              <span class="tag">Attendance</span>
+            </div>
+            <a
+              class="card__corner-icon"
+              href="https://visiomate.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Visiomate website"
+            >
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECH STACK -->
+    <section id="tech" class="section section--soft">
+      <div class="container">
+        <h2 class="section__title">Tech Stack</h2>
+        <div class="section__line"></div>
+
+        <div class="tech">
+          <span class="tech__item">Python</span>
+          <span class="tech__item">Odoo (v16–v19)</span>
+          <span class="tech__item">PostgreSQL</span>
+          <span class="tech__item">XML</span>
+          <span class="tech__item">QWeb</span>
+          <span class="tech__item">JavaScript</span>
+          <span class="tech__item">Git / GitHub</span>
+          <span class="tech__item">Postman</span>
+          <span class="tech__item">PyCharm</span>
+          <span class="tech__item">VS Code</span>
+          <span class="tech__item">XLSXWriter</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section section--soft">
+      <div class="container contact">
+        <h2 class="contact__title">Let’s work together.</h2>
+        <p class="contact__text">
+          I’m currently open to freelance projects and full-time opportunities.
+        </p>
+
+        <a class="email-btn" href="mailto:muhammaduzia95@gmail.com">
+          <i class="fa-solid fa-envelope"></i>
+          <span>muhammaduzia95@gmail.com</span>
+        </a>
+
+        <div class="socials">
+          <a
+            href="https://github.com/muhammaduzia95"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/muhammaduzia95"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <!-- <a href="#" target="_blank" aria-label="YouTube"> -->
+          <!-- <i class="fa-brands fa-youtube"></i> -->
+          <!-- </a> -->
+
+          <!-- <a href="#" target="_blank" aria-label="TikTok"> -->
+          <!-- <i class="fa-brands fa-tiktok"></i> -->
+          <!-- </a> -->
+
+          <!-- <a href="#" target="_blank" aria-label="Instagram"> -->
+          <!-- <i class="fa-brands fa-instagram"></i> -->
+          <!-- </a> -->
+
+          <a
+            href="https://www.upwork.com/freelancers/~01b37433c73f7dff83?mp_source=share"
+            target="_blank"
+            aria-label="Upwork"
+          >
+            <i class="fa-brands fa-upwork"></i>
+          </a>
+
+          <a
+            href="https://wa.me/923354545236"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <p class="footer">
+          © <span id="year"></span> Muhammad Zia. All rights reserved.
+        </p>
+      </div>
+    </section>
+
+    <audio id="winkSound" preload="auto">
+      <source
+        src="assets/audio/soundjay_cartoon-eye-blink_main-01.mp3"
+        type="audio/mpeg"
+      />
+      <source
+        src="assets/audio/soundjay_cartoon-eye-blink_main-01.wav"
+        type="audio/wav"
+      />
+    </audio>
+
+    <!-- PROJECT DETAIL OVERLAY -->
+    <div class="project-modal" id="projectModal" aria-hidden="true">
+      <button class="project-modal__close" id="projectModalClose" type="button">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="project-modal__content">
+        <h2 class="project-modal__title" id="projectModalTitle">
+          Project Title
+        </h2>
+
+        <div class="project-modal__body" id="projectModalBody">
+          <!-- JS will add screenshots + descriptions here -->
+        </div>
+      </div>
+    </div>
+
+    <div class="project-image-zoom" id="projectImageZoom" aria-hidden="true">
+      <button
+        class="project-image-zoom__close"
+        id="projectImageZoomClose"
+        type="button"
+      >
+        ×
+      </button>
+      <img id="projectImageZoomImg" src="" alt="" />
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/project_details.js"></script>
+  </body>
+</html>
