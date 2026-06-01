@@ -1,0 +1,256 @@
+/* timeline.css */
+
+.timeline {
+  margin-top: 60px;
+}
+
+.timeline__track {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+}
+
+/* segments = hover targets */
+.timeline__seg {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 22px;
+  cursor: pointer;
+  overflow: visible;
+}
+
+/* actual line drawn inside segment */
+.timeline__seg::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 2px;
+  background: var(--line);
+  border-radius: 999px;
+}
+
+/* invisible bridge so hover doesn't break in the gap */
+.timeline__seg::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 70px;
+  background: transparent;
+  z-index: 1;
+}
+
+/* length tuning */
+.timeline__seg--outer {
+  flex: 0.55;
+}
+.timeline__seg--inner {
+  flex: 1.2;
+}
+
+/* dot + year */
+.timeline__node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.timeline__year {
+  font-weight: 800;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background: var(--dot);
+  border-radius: 50%;
+}
+
+/* card */
+.timeline__card {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  transform: translateX(-50%);
+  width: 250px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+
+  box-shadow: var(--shadowCard);
+  z-index: 10;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: 0.18s ease;
+}
+
+.timeline__card h3 {
+  font-size: 14px;
+  font-weight: 900;
+  margin-bottom: 6px;
+}
+
+.timeline__card p {
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.timeline__card small {
+  color: var(--muted);
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* links inside timeline card */
+.timeline__card a {
+  color: var(--text);
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.timeline__card a:hover {
+  opacity: 0.8;
+}
+
+/* show card while hover or active */
+.timeline__seg:hover .timeline__card,
+.timeline__seg:has(.timeline__card:hover) .timeline__card,
+.timeline__seg.is-active .timeline__card {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* line darker on hover */
+.timeline__seg:hover::before,
+.timeline__seg.is-active::before {
+  background: var(--text);
+}
+
+/* =============================
+   MOBILE: Vertical Timeline
+   ============================= */
+@media (max-width: 720px) {
+  .timeline__track {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .timeline__seg {
+    width: 2px;
+    height: 80px;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* Vertical line (centered) */
+  .timeline__seg::before {
+    left: 50%;
+    right: auto;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: translateX(-50%);
+  }
+
+  /* Invisible tap area */
+  .timeline__seg::after {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    bottom: 0;
+    width: 60px;
+    height: 100%;
+  }
+
+  /* All segments same size */
+  .timeline__seg--outer,
+  .timeline__seg--inner {
+    flex: none;
+    height: 80px;
+  }
+
+  /* Dot + Year (centered on line) */
+  .timeline__node {
+    flex-direction: column;
+    gap: 8px;
+    z-index: 2;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  .timeline__year {
+    font-size: 13px;
+  }
+
+  /* Card appears below the dot */
+  .timeline__card {
+    position: absolute;
+    left: 50%;
+    top: auto;
+    bottom: auto;
+    transform: translateX(-50%);
+    width: min(280px, 90vw);
+    margin-top: 80px;
+  }
+
+  /* Keep hover/click behavior */
+  .timeline__seg:hover::before,
+  .timeline__seg.is-active::before {
+    background: var(--text);
+  }
+}
+
+/* --------------- */
+/* --------------- */
+/* TIMELINE: Scroll animations */
+
+#timeline {
+  opacity: 0;
+  transform: translateY(50px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+#timeline.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Animate timeline elements with stagger */
+.timeline__track {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 1s ease 0.2s,
+    transform 1s ease 0.2s;
+}
+
+#timeline.is-visible .timeline__track {
+  opacity: 1;
+  transform: translateY(0);
+}

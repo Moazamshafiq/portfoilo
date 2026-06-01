@@ -1,0 +1,171 @@
+/* nav.css */
+
+.nav {
+  position: fixed; /* CHANGED from sticky */
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+  background: var(--navBg);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  transition: transform 0.3s ease;
+}
+
+.nav--hidden {
+  transform: translateY(-100%);
+}
+
+.nav__inner {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* .logo { */
+/* display: inline-flex; */
+/* align-items: center; */
+/* gap: 10px; */
+/* text-decoration: none; */
+/* } */
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; /* Remove tap highlight on mobile */
+  outline: none; /* Remove focus outline */
+}
+
+.logo:focus {
+  outline: none; /* Extra safety for focus state */
+}
+
+.logo__img {
+  color: var(--text);
+  height: 25px;
+  width: auto;
+  display: block;
+}
+
+/* wink animation */
+.logo__lid {
+  transform-box: fill-box;
+  transform-origin: center 65%;
+}
+
+.logo:hover .logo__lid {
+  animation: wink 0.42s ease-in-out 1;
+}
+
+@keyframes wink {
+  0%,
+  35%,
+  100% {
+    transform: scaleY(1);
+  }
+  55% {
+    transform: scaleY(0.08);
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.menu__link:hover {
+  background: var(--hover);
+  color: var(--text);
+}
+
+.menu__link.is-active {
+  color: var(--text);
+  background: var(--hover);
+}
+
+/* icons in navbar (download + theme toggle) */
+.menu__icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 10px;
+  color: var(--text);
+  background: transparent;
+  text-decoration: none;
+  transition: 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.menu__icon:hover {
+  background: var(--hover);
+}
+
+.burger {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  place-items: center;
+}
+
+.burger i {
+  font-size: 18px;
+  color: var(--text);
+}
+
+/* Mobile burger menu */
+@media (max-width: 1000px) {
+  .burger {
+    display: grid;
+  }
+
+  .menu {
+    position: absolute;
+    right: 16px;
+    top: 70px;
+    width: min(240px, calc(100vw - 32px));
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    z-index: 1000;
+  }
+
+  .menu.is-open {
+    display: flex;
+  }
+
+  .menu__link {
+    width: 100%;
+  }
+
+  /* HIDE download and theme icons on mobile/tablet */
+  .menu__icon {
+    display: none;
+  }
+}
